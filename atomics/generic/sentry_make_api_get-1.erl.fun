@@ -22,7 +22,7 @@ fun(SubUrl) when is_binary(SubUrl) orelse is_list(SubUrl) ->
             false ->
                 BaseUrl ++ SubUrl
         end,
-    case make_http_get(Url, Headers) of
+    case transport_make_http_get(Url, Headers) of
         {ok, Body} ->
             #{<<"result">> => jsx:decode(Body, [return_maps])};
         E ->

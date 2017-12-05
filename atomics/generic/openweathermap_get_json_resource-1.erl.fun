@@ -21,7 +21,7 @@ fun(Resource) when is_binary(Resource) orelse is_list(Resource) ->
                             Resource
                     end,
     Url = BaseUrl ++ ResourceString ++ "&APPID=" ++ ApiKey,
-    case make_http_get(Url) of
+    case transport_make_http_get(Url) of
         {ok, Body} ->
             #{<<"result">> => jsx:decode(Body, [return_maps])};
         E ->

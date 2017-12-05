@@ -13,5 +13,5 @@ fun(Msg) when is_list(Msg) orelse is_binary(Msg) ->
     Json = #{
         <<"text">> => Msg
     },
-    make_http_json_post(ApiUrl, jsx:encode(Json))
+    transport_make_http_json_post(ApiUrl, jsx:encode(Json))
 end.
