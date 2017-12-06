@@ -1,4 +1,4 @@
-%% @doc Send a message on Slack channel
+%% @doc Send a message on default Slack channel
 %% @author Neeraj Sharma <neeraj.sharma@alumni.iitg.ernet.in>
 %%
 %% run messaging_slack_send_message(<<"Hello there! I am BeamParticle. You can read more about me at http://beamparticle.org">>)
@@ -8,10 +8,5 @@
 %%
 %% fun(binary() | iolist()) -> ok | {error, term()}.
 fun(Msg) when is_list(Msg) orelse is_binary(Msg) ->
-    {ok, SlackConfig} = config_get_or_load_config(dynamic_config_slack),
-    ApiUrl = proplists:get_value(base_url, SlackConfig),
-    Json = #{
-        <<"text">> => Msg
-    },
-    transport_make_http_json_post(ApiUrl, jsx:encode(Json))
+    messaging_slack_send_message(<<"default">>, Msg)
 end.

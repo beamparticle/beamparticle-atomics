@@ -29,7 +29,11 @@ fun() ->
 
     %% Slack configuration
     SlackConfig = [
-        {base_url, "https://hooks.slack.com/services/AN0000001/C121321AA/HR1123232100000202002000"}
+        %% default channel
+        {<<"default">>, [
+            {base_url, "https://hooks.slack.com/services/AN0000001/C121321AA/HR1123232100000202002000"}
+        ]}
+        %% Add your other channels
     ],
     application:set_env(Application, dynamic_config_slack, SlackConfig),
 
