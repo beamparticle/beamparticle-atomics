@@ -16,7 +16,7 @@
 %% address-list    =       (address *("," address)) / obs-addr-list
 %%
 %%
-%% run email_send_plain_message(<<"Beamer <beamer@beamparticle.org>">>, <<"Hello">>, <<"Hello there! I live at http://beamparticle.org">>)
+%% run messaging_email_send_plain_message(<<"Beamer <beamer@beamparticle.org>">>, <<"Hello">>, <<"Hello there! I live at http://beamparticle.org">>)
 %%
 %% IMPORTANT: Email could be throttled, so use them wisely.
 %%

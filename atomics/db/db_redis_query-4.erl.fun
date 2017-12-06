@@ -3,7 +3,7 @@
 %%
 %% Note that timeout is 5000 millisecond in the following queries
 %%
-%% run redis_query("localhost", 6379, ["GET", "somekey"], 5000)
+%% run db_redis_query("localhost", 6379, ["GET", "somekey"], 5000)
 %%
 %% see https://github.com/wooga/eredis
 %%

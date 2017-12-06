@@ -2,22 +2,22 @@
 %% @author Neeraj Sharma <neeraj.sharma@alumni.iitg.ernet.in>
 %%
 %% Get home dashboard
-%% run grafana_make_api_get("dashboards/home")
-%% run {json, grafana_make_api_get("dashboards/home")}
+%% run metrics_grafana_make_api_get("dashboards/home")
+%% run {json, metrics_grafana_make_api_get("dashboards/home")}
 %%
 %% Get critical business api dashboard
-%% run grafana_make_api_get("dashboards/db/critical-business-apis")
-%% run {json, grafana_make_api_get("dashboards/db/critical-business-apis")}
+%% run metrics_grafana_make_api_get("dashboards/db/critical-business-apis")
+%% run {json, metrics_grafana_make_api_get("dashboards/db/critical-business-apis")}
 %%
 %% Get all dashboards
-%% run {json, grafana_make_api_get("search?query=&starred=false")}
+%% run {json, metrics_grafana_make_api_get("search?query=&starred=false")}
 %%
 %%
 %% ONLY WORKS FOR ADMIN TOKEN
-%% run grafana_make_api_get(<<"datasources">>)
-%% run grafana_make_api_get("datasources")
-%% run {json, grafana_make_api_get("datasources")}
-%% run grafana_make_api_get(<<"datasources/name/DalmatinerDB">>)
+%% run metrics_grafana_make_api_get(<<"datasources">>)
+%% run metrics_grafana_make_api_get("datasources")
+%% run {json, metrics_grafana_make_api_get("datasources")}
+%% run metrics_grafana_make_api_get(<<"datasources/name/DalmatinerDB">>)
 %%
 %% http://docs.grafana.org/http_api/data_source/#data-source-proxy-calls
 %%

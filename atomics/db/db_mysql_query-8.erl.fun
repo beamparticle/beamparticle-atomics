@@ -12,7 +12,7 @@
 %%
 %% Note that timeout is 5000 millisecond in the following queries
 %%
-%% run mysql_query("localhost", 3306, "dbname", "root", "root", <<"SELECT 1">>, [], 5000)
+%% run db_mysql_query("localhost", 3306, "dbname", "root", "root", <<"SELECT 1">>, [], 5000)
 %%
 %% see https://github.com/mysql-otp/mysql-otp
 %%

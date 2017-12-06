@@ -1,7 +1,7 @@
 %% @doc Send a message on Slack channel
 %% @author Neeraj Sharma <neeraj.sharma@alumni.iitg.ernet.in>
 %%
-%% run slack_send_message(<<"Hello there! I am BeamParticle. You can read more about me at http://beamparticle.org">>)
+%% run messaging_slack_send_message(<<"Hello there! I am BeamParticle. You can read more about me at http://beamparticle.org">>)
 %%
 %% @see https://api.slack.com/incoming-webhooks
 %% @see https://api.slack.com/docs/message-formatting

@@ -1,9 +1,9 @@
 %% @doc Convert any erlang term to printable binary
 %% @author Neeraj Sharma <neeraj.sharma@alumni.iitg.ernet.in>
 %%
-%% run util_convert_to_printable_binary(1)
-%% run util_convert_to_printable_binary("Hello")
-%% run util_convert_to_printable_binary(<<"Hello">>)
+%% run utils_convert_to_printable_binary(1)
+%% run utils_convert_to_printable_binary("Hello")
+%% run utils_convert_to_printable_binary(<<"Hello">>)
 %%
 %% fun(term()) -> binary().
 fun(V) when is_binary(V) ->

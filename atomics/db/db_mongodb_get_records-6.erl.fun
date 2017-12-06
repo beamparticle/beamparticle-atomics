@@ -1,9 +1,9 @@
 %% @doc Get records from a mongodb database collection based on selector
 %% @author Neeraj Sharma <neeraj.sharma@alumni.iitg.ernet.in>
 %%
-%% run mongodb_get_records("localhost", 27017, <<"dbname">>, <<"collection">>, , #{<<"status">> => <<"ok">>, <<"type">> => <<"sometype">>}, 10)
-%% run mongodb_get_records("localhost", 27017, <<"dbname">>, <<"collection">>, , #{}, 10)
-%% run {json, mongodb_get_records("localhost", 27017, <<"dbname">>, <<"collection">>, , #{}, 10)}
+%% run db_mongodb_get_records("localhost", 27017, <<"dbname">>, <<"collection">>, , #{<<"status">> => <<"ok">>, <<"type">> => <<"sometype">>}, 10)
+%% run db_mongodb_get_records("localhost", 27017, <<"dbname">>, <<"collection">>, , #{}, 10)
+%% run {json, db_mongodb_get_records("localhost", 27017, <<"dbname">>, <<"collection">>, , #{}, 10)}
 %%
 %% @todo The batchsize is fixed at 10, which must be settable via
 %%       options.
